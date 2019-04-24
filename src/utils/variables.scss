@@ -1,0 +1,92 @@
+// medias query
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+$desktop: "(min-width: 1281px)";
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+$desktop-laptops: "(min-width: 1025px) and (max-width: 1280px)";
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+$tablets-ipads-portrait: "(min-width: 768px) and (max-width: 1024px)";
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+$tablets-ipads-landscape: $tablets-ipads-portrait + " and (orientation: landscape)";
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+$tablets-mobiles-landscape-lr: "(min-width: 481px) and (max-width: 767px)";
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+$mobiles: "(min-width: 320px) and (max-width: 480px)";
+
+// font-size
+$title-font-size-mobile: 22px;
+$title-font-size-tablet: 24px;
+$title-font-size-desktop: 24px;
+
+$label-font-size-mobile: 13px;
+$label-font-size-tablet: 13px;
+$label-font-size-desktop: 13px;
+@mixin label-font() {
+  font-family: $labels-font-family;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+$option-font-size-mobile: 12px;
+$option-font-size-tablet: 12px;
+$option-font-size-desktop: 12px;
+
+$price-font-size-mobile: 15px;
+$price-font-size-tablet: 15px;
+$price-font-size-desktop: 15px;
+
+$button-font-size-mobile: 14px;
+$button-font-size-tablet: 14px;
+$button-font-size-desktop: 14px;
+
+$details-font-size-mobile: 13px;
+$details-font-size-tablet: 13px;
+$details-font-size-desktop: 13px;
+
+// font-family
+$title-font-family: 'Abhaya Libre', serif;
+$labels-font-family: 'Open Sans', sans-serif;
+$price-font-family: $labels-font-family;
+$details-font-family: 'Montserrat', sans-serif;;
+
+// colors
+// all color names where extrated from this page
+// http://chir.ag/projects/name-that-color
+$color-mine-shaft: #222222;
+$color-dove-gray: #666666;
+$color-alto: #E0E0E0;
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-tundora: #444444;
+$color-silver: #CCCCCC;
+$color-silver-two: #C9C9C9;
+$color-alabaster: #F7F7F7;
+$color-serenade: #FFEFE5;
+$color-cameo: #DAB5A1;
+$color-my-pink: #D49D89;
+$color-buccaneer: #6A3A33;
+$color-emperor: #524346;
+$color-gray: #888888;
+
+// carousel
+$carousel-height-mobile: 375px;
+$carousel-height-tablet: 375px;
+$carousel-height-desktop: 375px;
+

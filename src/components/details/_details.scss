@@ -1,0 +1,23 @@
+.details {
+  &-container {
+    margin: 40px 10px;
+  }
+  &-label {
+    @include label-font();
+    font-size: $label-font-size-mobile;
+    font-weight: 600;
+
+    &-container {
+      width: 100%;
+      border-bottom: 3px solid $color-alabaster;
+      padding-bottom: 15px;
+      margin-bottom: 35px;
+    }
+  }
+  &-text {
+    font-family: $details-font-family;
+    font-size: $details-font-size-mobile;
+    line-height: 1.77;
+    color: $color-tundora;
+  }
+}

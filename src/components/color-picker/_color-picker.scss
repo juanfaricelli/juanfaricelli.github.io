@@ -1,0 +1,69 @@
+$circle-size: 30px;
+$circle-size-with-border: 24px;
+@mixin selected() {
+  width: $circle-size-with-border;
+  height: $circle-size-with-border;
+  border: solid 3px $color-silver-two;
+}
+
+.color-picker {
+  &-container {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+  &-label {
+    @include label-font();
+    font-size: $label-font-size-mobile;
+    color: $color-mine-shaft;
+    &-value {
+      font-weight: 600;
+    }
+  }
+  &-colors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    &-circle {
+      width: $circle-size;
+      height: $circle-size;
+      border-radius: 50%;
+      cursor: pointer;
+  
+      &-naked {
+        &-1 {
+          background-color: $color-serenade;
+          &.selected {
+            @include selected();
+          }
+        }
+        &-2 {
+          background-color: $color-cameo;
+          &.selected {
+            @include selected();
+          }
+        }
+        &-3 {
+          background-color: $color-my-pink;
+          &.selected {
+            @include selected();
+          }
+        }
+        &-4 {
+          background-color: $color-buccaneer;
+          &.selected {
+            @include selected();
+          }
+        }
+        &-5 {
+          background-color: $color-emperor;
+          &.selected {
+            @include selected();
+          }
+        }
+      }
+    }
+  }
+}

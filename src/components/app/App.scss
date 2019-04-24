@@ -1,0 +1,50 @@
+// Utils
+@import '../../utils/variables';
+
+// Components
+@import '../title-price/title-price';
+@import '../price/price';
+@import '../five-star-rating/five-star-rating';
+@import '../carousel/carousel';
+@import '../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css';
+@import '../shop-panel/shop-panel';
+@import '../color-picker/color-picker';
+@import '../stok-label/stock-label';
+@import '../dropdown/dropdown';
+@import '../button/button';
+@import '../details/details';
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+// Grid design
+body {
+  margin: 0;
+
+  @media #{$desktop}, #{$desktop-laptops} {
+    margin: 70px 10%;
+  }
+}
+
+.app {
+  &-container {
+    display: flex;
+    flex-direction: column;
+  }
+  // desktop
+  @media #{$desktop}, #{$desktop-laptops} {
+    &-section {
+      display: inline-flex;
+      flex-direction: row;
+    }
+    &-content {
+      width: 70%;
+      margin-right: 20px;
+      &-side-panel {
+        width: 390px;
+      }
+    }
+  }
+}

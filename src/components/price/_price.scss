@@ -1,0 +1,28 @@
+.price {
+  &-container {
+    display: inline-flex;
+  }
+  &-amount {
+    font-family: $price-font-family;
+    font-size: $price-font-size-mobile;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    color: $color-dove-gray; 
+    padding: 0 9px;
+  }
+  &-stars {
+    visibility: hidden;
+    opacity: 0;
+    margin-right: -4em;
+    transition: all 0.5s;
+
+    &.visible {
+      margin-right: 0em;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

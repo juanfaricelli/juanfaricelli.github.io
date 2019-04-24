@@ -1,0 +1,10 @@
+.stock-label {
+  &-container {
+    @include label-font();
+    font-size: $label-font-size-mobile;
+    margin-top: 25px;
+  }
+  &-number {
+    font-weight: 600;
+  }
+}

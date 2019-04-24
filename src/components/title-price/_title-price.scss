@@ -1,0 +1,19 @@
+.title-container {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+
+  h1 {
+    font-family: $title-font-family;
+    font-size: $title-font-size-mobile;
+    font-weight: 500;
+    color: $color-mine-shaft;
+    margin-block-end: 9px;
+
+    @media #{$tablets-ipads-portrait},
+    #{$tablets-ipads-landscape},
+    #{$tablets-mobiles-landscape-lr} {
+      font-size: $title-font-size-tablet;
+    }
+  }
+}
