@@ -14,19 +14,20 @@ class App extends Component {
   constructor(props) {
     super(props);
 
+    props.fetchProduct();
     this.state = {
       price: '0',
     };
 
     this.updatePrice = this.updatePrice.bind(this);
   }
-  
+
   componentDidMount() {
     this.props.fetchProduct();
     window.addEventListener("resize", this.resize.bind(this));
     this.resize();
   }
-  
+
   componentWillUnmount() {
     window.removeEventListener("resize", this.resize.bind(this));
   }

@@ -7,7 +7,6 @@ import { Carousel } from 'react-responsive-carousel';
 const CarouselGallery = (props) => {
   const { images, smallView } = props;
 
-  debugger;
   const imagesList = images.map(({src600, src1000}, index) => {
     const url = `http://${smallView ? src600 : src1000}`;
     return (<img src={url} alt={`${KEYS.IMAGES_ALT} ${index}`}/>);
