@@ -9,6 +9,7 @@
 
 - Selecting the color will bring the options to the dropdowns, after choosing options in both of them, stock and price will be updated.
 - Selecting another color will cause reset of the price, stock and dropdowns options values.
+- Clicking on the price will display the 5-star rating component
 
 #### Components created
 
