@@ -2,6 +2,7 @@
   "name": "third-love-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://juanfaricelli.bitbucket.io/",
   "dependencies": {
     "axios": "^0.18.0",
     "i": "^0.3.6",
