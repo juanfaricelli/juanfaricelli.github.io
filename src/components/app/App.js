@@ -41,7 +41,7 @@ class App extends Component {
   }
 
   render() {
-    const { title, body_html: details , images, variants} = this.props.product;
+    const { title, body_html: details, images, variants} = this.props.product;
     const { smallView, price } = this.state;
 
     const smallLayout = () => {

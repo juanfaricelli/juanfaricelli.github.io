@@ -14,24 +14,20 @@ class ShopPanel extends Component {
     super(props);
 
     this.state = {
-      selectedColor: '',
-      filteredStock: [],
-      stock: '0',
       band: [],
-      selectedBand: '',
       cup: [],
+      filteredStock: [],
+      selectedBand: '',
+      selectedColor: '',
       selectedCup: '',
+      stock: '0',
     };
 
-    this.availableColors = this.availableColors.bind(this);
+
     this.selectColor = this.selectColor.bind(this);
     this.selectValue = this.selectValue.bind(this);
   }
 
-  componentDidMount() {
-    this.selectColor(this.availableColors(this.props.data)[0]);
-  }
-  
   availableColors(data) {
     let availableColors = [];
     data.map((item) => {
@@ -55,9 +51,9 @@ class ShopPanel extends Component {
     this.props.updatePrice(`0`);
   }
 
-  selectValue(event) {
+  selectValue(value) {
     const { filteredStock, selectedColor, selectedBand, selectedCup } = this.state;
-    const selectedValue = event.target.value;
+    const selectedValue = value.target.value || value;
     const isBand = parseInt(selectedValue) > 0;
     let stockParams = [filteredStock, selectedColor, selectedBand, selectedCup];
     let options = filteredStock.filter(({option2}) => {

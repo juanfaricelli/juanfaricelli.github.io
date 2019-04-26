@@ -4,7 +4,7 @@ import KEYS from '../../utils/labels';
 
 const ColorPicker = (props) => {
   const { onChange, availableColors, selectedColor } = props;
-  let colorSelected = selectedColor || availableColors[0];
+  let colorSelected = selectedColor;
 
   const defaultClassPrefix = 'color-picker';
 
@@ -30,7 +30,7 @@ const ColorPicker = (props) => {
     <div className={ `${defaultClassPrefix}-container` }>
       <div className={ `${defaultClassPrefix}-label` }>
         <label>
-          { KEYS.COLOR_LABEL } <span className={ `${defaultClassPrefix}-label-value` }> { colorSelected } </span>
+          { KEYS.COLOR_LABEL } <span className={ `${defaultClassPrefix}-label-value` }> { colorSelected || KEYS.SELECT } </span>
         </label>
       </div>
       <div className={ `${defaultClassPrefix}-colors` }>
@@ -49,7 +49,6 @@ ColorPicker.propTypes = {
 ColorPicker.defaultProps = {
   onChange: () => {},
   availableColors: [ 'naked-1' ],
-  selectedColor: 'naked-1'
 };
 
 export default ColorPicker;

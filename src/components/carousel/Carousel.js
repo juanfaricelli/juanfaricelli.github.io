@@ -9,7 +9,7 @@ const CarouselGallery = (props) => {
 
   const imagesList = images.map(({src600, src1000}, index) => {
     const url = `http://${smallView ? src600 : src1000}`;
-    return (<img src={url} alt={`${KEYS.IMAGES_ALT} ${index}`}/>);
+    return (<img key={index} src={url} alt={`${KEYS.IMAGES_ALT} ${index}`}/>);
   }).reverse();
 
   const carouselProps = {
