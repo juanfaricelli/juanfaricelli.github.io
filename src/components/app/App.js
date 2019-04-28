@@ -9,6 +9,7 @@ import TitlePrice from '../title-price/TitlePrice';
 import Carousel from '../carousel/Carousel';
 import ShopPanel from '../shop-panel/ShopPanel';
 import Details from '../details/Details';
+import SpinnerIcon from '../icons/SpinnerIcon';
 
 class App extends Component {
   constructor(props) {
@@ -73,7 +74,9 @@ class App extends Component {
     return (
       <main role="main">
         <div className="app-container">
-          { smallView ? smallLayout() : bigLayout() }
+          { !images ? 
+            <SpinnerIcon /> : 
+            (smallView ? smallLayout() : bigLayout()) }
         </div>
       </main>
     );
