@@ -34,6 +34,7 @@
 
 - Components Tests
 - Minification of JS and CSS code for production build
+- Look&Feel: adding a first-loading spinner
 
 ### `Commands you can run`
 
