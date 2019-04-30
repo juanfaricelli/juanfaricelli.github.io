@@ -15,7 +15,6 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    props.fetchProduct();
     this.state = {
       price: '0',
     };
